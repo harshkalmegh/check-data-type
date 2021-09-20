@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = "harsh";
+      var b = true;
+      var c = 25;
+      var d = { name: "harsh" };
+      var e = [];
+      var f = function () {};
+      var g = null;
+      var h;
+      function checkArray(e) {
+        if (Array.isArray(e));
+        {
+          return "Array";
+        }
+      }
+      function checkNull(g) {
+        if (g === null) {
+          return "null is not allowed";
+        }
+      }
+      function checkUndefined(h) {
+        if (h === undefined) {
+          return "please enter a value";
+        }
+      }
+
+      document.write(typeof a + "<br>");
+      document.write(typeof b + "<br>");
+      document.write(typeof c + "<br>");
+      document.write(typeof d + "<br>");
+      document.write(checkArray(e) + "<br>");
+      document.write(typeof f + "<br>");
+      document.write(checkNull(g) + "<br>");
+      document.write(checkUndefined(h));
+
+      /*
+      //   For String
+      var a = "harsh";
+      document.write(typeof a + "<br>");
+
+      //   For Boolean
+      var b = true;
+      document.write(typeof b + "<br>");
+
+      //   For Boolean
+      var c = 25;
+      document.write(typeof c + "<br>");
+
+      //   For Object
+      var d = { name: "harsh" };
+      document.write(typeof d + "<br>");
+
+      //   For Array
+      var e = [];
+      function checkArray(e) {
+        if (Array.isArray(e));
+        {
+          return "array";
+        }
+      }
+      document.write(checkArray(e) + "<br>");
+
+      //   For Function
+      var f = function () {};
+      document.write(typeof f + "<br>");
+
+      //   For Null
+      var g = null;
+      function checkNull(g) {
+        if (g === null) {
+          return "null is not allowed";
+        }
+      }
+      document.write(checkNull(g) + "<br>");
+
+      //   For Undefined
+      var h;
+      function checkUndefined(h) {
+        if (h === undefined) {
+          return "please enter a value";
+        }
+      }
+      document.write(checkUndefined(h) + "<br>");
+      */
+    </script>
+  </body>
+</html>
